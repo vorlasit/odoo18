@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="group_broad_chat_user" model="res.groups">
+        <field name="name">Broad Chat User</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <record id="group_broad_chat_manager" model="res.groups">
+        <field name="name">Broad Chat Manager</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

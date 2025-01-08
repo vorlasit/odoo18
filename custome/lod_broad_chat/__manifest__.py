@@ -1,22 +1,20 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
 {
-    'name': 'Invoicing',
-    'version': '1.3',
-    'summary': 'Invoices, Payments, Follow-ups & Bank Synchronization',
-    'sequence': 10,
+    'name': 'Broad Chat',
+    'version': '1.0.1',
+    'summary': ' ',
+    'sequence': -100,
     'description': """ """,
     'category': 'all',
-    'website': 'https://www.odoo.com/app/invoicing',
-    'depends': ['base_setup',  ],
-    'data': [
-         
-    ],
-    'demo': [
-         
-    ],
+    'website': 'https://www.laoodoo.com',
+    'depends': ['base','mail'],
+    'data': [ 
+        'security/groups.xml',
+        'security/ir.model.access.csv',
+        'security/rules.xml',
+        'views/broad_chat_views.xml',
+    ], 
     'installable': True,
-    'application': True,
-     
+    'application': True, 
     'license': 'LGPL-3',
 }

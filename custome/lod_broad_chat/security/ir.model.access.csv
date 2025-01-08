@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+lod_broad_chat.access_broad_chat_user,lod.broad.chat.user,lod_broad_chat.model_lod_broad_chat,group_broad_chat_user,1,1,1,0
+lod_broad_chat.access_broad_chat_manager,lod.broad.chat.manager,lod_broad_chat.model_lod_broad_chat,group_broad_chat_manager,1,1,1,1
+lod_broad_chat.access_broad_chat_list_user,lod.broad.chat.list.user,lod_broad_chat.model_lod_broad_chat_list,group_broad_chat_user,1,1,1,0
+lod_broad_chat.access_broad_chat_list_manager,lod.broad.chat.list.manager,lod_broad_chat.model_lod_broad_chat_list,group_broad_chat_manager,1,1,1,1

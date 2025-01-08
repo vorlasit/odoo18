@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_broad_chat_form" model="ir.ui.view">
+        <field name="name">lod.broad.chat.form</field>
+        <field name="model">lod.broad.chat</field>
+        <field name="arch" type="xml">
+            <form string="Broad Chat">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="broad_chat"  options="{'no_track': True}"/>
+                    </group>
+                    <notebook>
+                        <page string="Chat Lists">
+                            <field name="chat_list_ids">
+                                <list string="Chat Lists"> 
+                                    <field name="broad_chat"/> 
+                                </list>
+                                <form string="Chat List">
+                                    <sheet> 
+                                        <field name="broad_chat"/> 
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_broad_chat_tree" model="ir.ui.view">
+        <field name="name">lod.broad.chat.tree</field>
+        <field name="model">lod.broad.chat</field>
+        <field name="arch" type="xml">
+            <list string="Broad Chats">
+                <field name="name"/>
+                <!-- <field name="broad_chat"/> -->
+            </list>
+        </field>
+    </record>
+
+    <record id="action_broad_chat" model="ir.actions.act_window">
+        <field name="name">Broad Chats</field>
+        <field name="res_model">lod.broad.chat</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p>
+                Use this menu to manage your Broad Chats and their associated lists.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_broad_chat_root" name="Broad Chat" sequence="10" 
+        web_icon="lod_broad_chat,static/description/icon.png"/>
+    <menuitem id="menu_broad_chat" name="Broad Chats" parent="menu_broad_chat_root" action="action_broad_chat" sequence="10"/>
+</odoo>
+

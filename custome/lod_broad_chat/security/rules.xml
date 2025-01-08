@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="rule_broad_chat_user" model="ir.rule">
+        <field name="name">Broad Chat User Rule</field>
+        <field name="model_id" ref="model_lod_broad_chat"/>
+        <field name="groups" eval="[(4, ref('group_broad_chat_user'))]"/>
+        <field name="domain_force">[('create_uid', '=', user.id)]</field>
+    </record>
+</odoo>
